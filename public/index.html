@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Join screen -->
+  <div id="join-screen">
+    <div class="join-box">
+      <h1>Simple Chat</h1>
+      <input id="username-input" type="text" maxlength="24" placeholder="Enter your username" autocomplete="off" />
+      <button id="join-btn">Join</button>
+    </div>
+  </div>
+
+  <!-- Chat screen -->
+  <div id="chat-screen" class="hidden">
+    <aside id="sidebar">
+      <h2>Online</h2>
+      <ul id="user-list"></ul>
+    </aside>
+
+    <main id="chat-main">
+      <header id="chat-header">
+        <span>Simple Chat</span>
+        <span id="status-dot" title="Connecting..."></span>
+      </header>
+
+      <div id="messages"></div>
+
+      <form id="message-form">
+        <input id="message-input" type="text" maxlength="500" placeholder="Type a message..." autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
