@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +24,8 @@
   "dependencies": {
     "express": "^5.2.1",
     "ws": "^8.20.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.84.1"
   }
 }
